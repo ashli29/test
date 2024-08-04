@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Browsers.FIREFOX;
 
-public class Examples {
+public class ExamplesTest {
 
     @BeforeAll
     static void beforeAll(){
@@ -36,11 +36,11 @@ public class Examples {
     @Test
     void exmp(){
         System.out.println("This is test 11111");
-        Assertions.assertTrue(3>2);
+        //Assertions.assertTrue(3>2);
     }
     @Test
     void exmp2(){
         System.out.println("This is test 22222");
-        Assertions.assertTrue(3>2);
+        //Assertions.assertTrue(3>2);
     }
 }
