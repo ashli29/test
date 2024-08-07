@@ -14,6 +14,9 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         String userEmail = "alex@egorov.com";
         String userGender = "Other";
         String userPhone = "1234567890";
+        String userDay = "30";
+        String userMonth = "July";
+        String userYear = "2008";
 
         registrationPage.openPage()
                 .setFirstName(userName)
@@ -21,7 +24,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
                 .setEmail(userEmail)
                 .setGender(userGender)
                 .setPhone(userPhone)
-                .setBirthDate("30", "July", "2008");
+                .setBirthDate(userDay, userMonth, userYear);
 
         $("#subjectsInput").setValue("Math").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();

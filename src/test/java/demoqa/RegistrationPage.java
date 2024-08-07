@@ -68,7 +68,7 @@ public class RegistrationPage {
         return this;
     }
 
-    //проверка данных
+    // проверка
 
     public RegistrationPage verifyResultsModalAppears() {
         registrationResultsModal.verifyModalAppears();
